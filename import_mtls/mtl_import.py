@@ -28,7 +28,11 @@ semantic_map = {
     "detailMap": "normalMap",
 }   
 
-export_dir = input("enter model_export path (press enter to skip): ")
+export_dir = input(""" Enter path to the "_images" folder for your model, 
+
+Example: model_export\\kingslayer_kyle\\my_model\\_images
+
+(Press enter to skip, find "REPLACE_THIS_TEXT" in a text editor)""")
 if (export_dir == ""):
     export_dir = "REPLACE_THIS_TEXT"
 
@@ -111,8 +115,8 @@ def mtl_entry(mtl_name, mtl_images):
     return template.format(mtl_name = mtl_name, img_list = img_list)
 
 
-def start_gdt():
-    gdt = open(f'{uuid.uuid4()}.gdt', 'a+')
+def start_gdt(output_name):
+    gdt = open(f'{output_name}.gdt', 'a+')
     gdt.write("{\n")
     return gdt
 
@@ -124,9 +128,9 @@ def end_gdt(gdt_file):
 #oop
 def main():
     # sets up the gdt output file
-    gdt_out = start_gdt()
     input_directory = input("enter .txt folder path: ") # get the directory 
-    
+    gdt_out = start_gdt(os.path.split(input_directory)[1])
+    print(os.path.split(input_directory)[1])
     
     for file in glob.glob(f'{input_directory}/*.txt'):
         print(f"processing {os.path.split(file)[1]}...")

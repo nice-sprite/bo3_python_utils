@@ -8,5 +8,10 @@ install:  `pip3 install Wand, apt-get install libmagickwand-dev`
 for windows, requires https://docs.wand-py.org/en/0.4.1/guide/install.html#install-imagemagick-windows to be installed
 
 ## Image and material import script
-
 Materials will come default with the "geometry, lit" techset. But choosing another techset will autofill the images in each of the fields where the images exist for that material
+
+If you want images with no materials, use img_import.py
+
+For materials too, use mtl_import.py
+
+Credits: Kingslayer Kyle (Idea, Testing)
