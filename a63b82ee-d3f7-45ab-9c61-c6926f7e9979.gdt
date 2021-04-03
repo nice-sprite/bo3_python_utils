@@ -1,0 +1,488 @@
+{
+
+            "i_c_t9_usa_pl_adler_infiltration_flight_jacket_o" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\i_c_t9_usa_pl_adler_infiltration_flight_jacket_o.png"
+                "compressionMethod" "compressed"
+                "semantic" "occlusionMap"
+                "type" "image"
+            }
+    
+            "i_c_t9_usa_pl_adler_infiltration_flight_jacket_n" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\i_c_t9_usa_pl_adler_infiltration_flight_jacket_n.png"
+                "compressionMethod" "compressed"
+                "semantic" "normalMap"
+                "type" "image"
+            }
+    
+            "i_c_t8_detail_leather_bull_n" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\i_c_t8_detail_leather_bull_n.png"
+                "compressionMethod" "compressed"
+                "semantic" "normalMap"
+                "type" "image"
+            }
+    
+            "i_c_gen_detail_soft_fabric_n" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\i_c_gen_detail_soft_fabric_n.png"
+                "compressionMethod" "compressed"
+                "semantic" "normalMap"
+                "type" "image"
+            }
+    
+            "i_c_gen_detail_neoprene_n" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\i_c_gen_detail_neoprene_n.png"
+                "compressionMethod" "compressed"
+                "semantic" "normalMap"
+                "type" "image"
+            }
+    
+            "ximage_c3c2dcaa1919434" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\ximage_c3c2dcaa1919434.png"
+                "compressionMethod" "compressed"
+                "semantic" "normalMap"
+                "type" "image"
+            }
+    
+            "i_c_t9_usa_pl_adler_infiltration_flight_jacket_c" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\i_c_t9_usa_pl_adler_infiltration_flight_jacket_c.png"
+                "compressionMethod" "compressed"
+                "semantic" "diffuseMap"
+                "type" "image"
+            }
+    
+            "i_c_t9_usa_pl_adler_infiltration_flight_jacket_m" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\i_c_t9_usa_pl_adler_infiltration_flight_jacket_m.png"
+                "compressionMethod" "compressed"
+                "semantic" "multipleMask"
+                "type" "image"
+            }
+    
+            "i_c_t9_usa_pl_adler_infiltration_flight_jacket_g" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\i_c_t9_usa_pl_adler_infiltration_flight_jacket_g.png"
+                "compressionMethod" "compressed"
+                "semantic" "glossMap"
+                "type" "image"
+            }
+    
+            "i_c_t9_usa_pl_adler_infiltration_flight_jacket_s" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\i_c_t9_usa_pl_adler_infiltration_flight_jacket_s.png"
+                "compressionMethod" "compressed"
+                "semantic" "specularMap"
+                "type" "image"
+            }
+    
+            "images_copy_2" ( "material.gdf" )
+            {
+                "materialCategory" "Geometry"
+                "materialType" "lit"
+                				"occlusionMap" "i_c_t9_usa_pl_adler_infiltration_flight_jacket_o" 
+				"normalMap" "i_c_t9_usa_pl_adler_infiltration_flight_jacket_n" 
+				"normalMap" "i_c_t8_detail_leather_bull_n" 
+				"normalMap" "i_c_gen_detail_soft_fabric_n" 
+				"normalMap" "i_c_gen_detail_neoprene_n" 
+				"normalMap" "ximage_c3c2dcaa1919434" 
+				"diffuseMap" "i_c_t9_usa_pl_adler_infiltration_flight_jacket_c" 
+				"multipleMask" "i_c_t9_usa_pl_adler_infiltration_flight_jacket_m" 
+				"glossMap" "i_c_t9_usa_pl_adler_infiltration_flight_jacket_g" 
+				"specularMap" "i_c_t9_usa_pl_adler_infiltration_flight_jacket_s" 
+
+            }
+    
+            "i_c_t9_usa_pl_adler_infiltration_flight_jacket_o" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\i_c_t9_usa_pl_adler_infiltration_flight_jacket_o.png"
+                "compressionMethod" "compressed"
+                "semantic" "occlusionMap"
+                "type" "image"
+            }
+    
+            "i_c_t9_usa_pl_adler_infiltration_flight_jacket_n" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\i_c_t9_usa_pl_adler_infiltration_flight_jacket_n.png"
+                "compressionMethod" "compressed"
+                "semantic" "normalMap"
+                "type" "image"
+            }
+    
+            "i_c_t8_detail_leather_bull_n" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\i_c_t8_detail_leather_bull_n.png"
+                "compressionMethod" "compressed"
+                "semantic" "normalMap"
+                "type" "image"
+            }
+    
+            "i_c_gen_detail_soft_fabric_n" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\i_c_gen_detail_soft_fabric_n.png"
+                "compressionMethod" "compressed"
+                "semantic" "normalMap"
+                "type" "image"
+            }
+    
+            "i_c_gen_detail_neoprene_n" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\i_c_gen_detail_neoprene_n.png"
+                "compressionMethod" "compressed"
+                "semantic" "normalMap"
+                "type" "image"
+            }
+    
+            "ximage_c3c2dcaa1919434" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\ximage_c3c2dcaa1919434.png"
+                "compressionMethod" "compressed"
+                "semantic" "normalMap"
+                "type" "image"
+            }
+    
+            "i_c_t9_usa_pl_adler_infiltration_flight_jacket_c" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\i_c_t9_usa_pl_adler_infiltration_flight_jacket_c.png"
+                "compressionMethod" "compressed"
+                "semantic" "diffuseMap"
+                "type" "image"
+            }
+    
+            "i_c_t9_usa_pl_adler_infiltration_flight_jacket_m" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\i_c_t9_usa_pl_adler_infiltration_flight_jacket_m.png"
+                "compressionMethod" "compressed"
+                "semantic" "multipleMask"
+                "type" "image"
+            }
+    
+            "i_c_t9_usa_pl_adler_infiltration_flight_jacket_g" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\i_c_t9_usa_pl_adler_infiltration_flight_jacket_g.png"
+                "compressionMethod" "compressed"
+                "semantic" "glossMap"
+                "type" "image"
+            }
+    
+            "i_c_t9_usa_pl_adler_infiltration_flight_jacket_s" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\i_c_t9_usa_pl_adler_infiltration_flight_jacket_s.png"
+                "compressionMethod" "compressed"
+                "semantic" "specularMap"
+                "type" "image"
+            }
+    
+            "images_copy_3" ( "material.gdf" )
+            {
+                "materialCategory" "Geometry"
+                "materialType" "lit"
+                				"occlusionMap" "i_c_t9_usa_pl_adler_infiltration_flight_jacket_o" 
+				"normalMap" "i_c_t9_usa_pl_adler_infiltration_flight_jacket_n" 
+				"normalMap" "i_c_t8_detail_leather_bull_n" 
+				"normalMap" "i_c_gen_detail_soft_fabric_n" 
+				"normalMap" "i_c_gen_detail_neoprene_n" 
+				"normalMap" "ximage_c3c2dcaa1919434" 
+				"diffuseMap" "i_c_t9_usa_pl_adler_infiltration_flight_jacket_c" 
+				"multipleMask" "i_c_t9_usa_pl_adler_infiltration_flight_jacket_m" 
+				"glossMap" "i_c_t9_usa_pl_adler_infiltration_flight_jacket_g" 
+				"specularMap" "i_c_t9_usa_pl_adler_infiltration_flight_jacket_s" 
+
+            }
+    
+            "i_c_t9_usa_pl_adler_infiltration_flight_jacket_o" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\i_c_t9_usa_pl_adler_infiltration_flight_jacket_o.png"
+                "compressionMethod" "compressed"
+                "semantic" "occlusionMap"
+                "type" "image"
+            }
+    
+            "i_c_t9_usa_pl_adler_infiltration_flight_jacket_n" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\i_c_t9_usa_pl_adler_infiltration_flight_jacket_n.png"
+                "compressionMethod" "compressed"
+                "semantic" "normalMap"
+                "type" "image"
+            }
+    
+            "i_c_t8_detail_leather_bull_n" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\i_c_t8_detail_leather_bull_n.png"
+                "compressionMethod" "compressed"
+                "semantic" "normalMap"
+                "type" "image"
+            }
+    
+            "i_c_gen_detail_soft_fabric_n" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\i_c_gen_detail_soft_fabric_n.png"
+                "compressionMethod" "compressed"
+                "semantic" "normalMap"
+                "type" "image"
+            }
+    
+            "i_c_gen_detail_neoprene_n" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\i_c_gen_detail_neoprene_n.png"
+                "compressionMethod" "compressed"
+                "semantic" "normalMap"
+                "type" "image"
+            }
+    
+            "ximage_c3c2dcaa1919434" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\ximage_c3c2dcaa1919434.png"
+                "compressionMethod" "compressed"
+                "semantic" "normalMap"
+                "type" "image"
+            }
+    
+            "i_c_t9_usa_pl_adler_infiltration_flight_jacket_c" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\i_c_t9_usa_pl_adler_infiltration_flight_jacket_c.png"
+                "compressionMethod" "compressed"
+                "semantic" "diffuseMap"
+                "type" "image"
+            }
+    
+            "i_c_t9_usa_pl_adler_infiltration_flight_jacket_m" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\i_c_t9_usa_pl_adler_infiltration_flight_jacket_m.png"
+                "compressionMethod" "compressed"
+                "semantic" "multipleMask"
+                "type" "image"
+            }
+    
+            "i_c_t9_usa_pl_adler_infiltration_flight_jacket_g" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\i_c_t9_usa_pl_adler_infiltration_flight_jacket_g.png"
+                "compressionMethod" "compressed"
+                "semantic" "glossMap"
+                "type" "image"
+            }
+    
+            "i_c_t9_usa_pl_adler_infiltration_flight_jacket_s" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\i_c_t9_usa_pl_adler_infiltration_flight_jacket_s.png"
+                "compressionMethod" "compressed"
+                "semantic" "specularMap"
+                "type" "image"
+            }
+    
+            "images_copy_4" ( "material.gdf" )
+            {
+                "materialCategory" "Geometry"
+                "materialType" "lit"
+                				"occlusionMap" "i_c_t9_usa_pl_adler_infiltration_flight_jacket_o" 
+				"normalMap" "i_c_t9_usa_pl_adler_infiltration_flight_jacket_n" 
+				"normalMap" "i_c_t8_detail_leather_bull_n" 
+				"normalMap" "i_c_gen_detail_soft_fabric_n" 
+				"normalMap" "i_c_gen_detail_neoprene_n" 
+				"normalMap" "ximage_c3c2dcaa1919434" 
+				"diffuseMap" "i_c_t9_usa_pl_adler_infiltration_flight_jacket_c" 
+				"multipleMask" "i_c_t9_usa_pl_adler_infiltration_flight_jacket_m" 
+				"glossMap" "i_c_t9_usa_pl_adler_infiltration_flight_jacket_g" 
+				"specularMap" "i_c_t9_usa_pl_adler_infiltration_flight_jacket_s" 
+
+            }
+    
+            "i_c_t9_usa_pl_adler_infiltration_flight_jacket_o" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\i_c_t9_usa_pl_adler_infiltration_flight_jacket_o.png"
+                "compressionMethod" "compressed"
+                "semantic" "occlusionMap"
+                "type" "image"
+            }
+    
+            "i_c_t9_usa_pl_adler_infiltration_flight_jacket_n" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\i_c_t9_usa_pl_adler_infiltration_flight_jacket_n.png"
+                "compressionMethod" "compressed"
+                "semantic" "normalMap"
+                "type" "image"
+            }
+    
+            "i_c_t8_detail_leather_bull_n" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\i_c_t8_detail_leather_bull_n.png"
+                "compressionMethod" "compressed"
+                "semantic" "normalMap"
+                "type" "image"
+            }
+    
+            "i_c_gen_detail_soft_fabric_n" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\i_c_gen_detail_soft_fabric_n.png"
+                "compressionMethod" "compressed"
+                "semantic" "normalMap"
+                "type" "image"
+            }
+    
+            "i_c_gen_detail_neoprene_n" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\i_c_gen_detail_neoprene_n.png"
+                "compressionMethod" "compressed"
+                "semantic" "normalMap"
+                "type" "image"
+            }
+    
+            "ximage_c3c2dcaa1919434" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\ximage_c3c2dcaa1919434.png"
+                "compressionMethod" "compressed"
+                "semantic" "normalMap"
+                "type" "image"
+            }
+    
+            "i_c_t9_usa_pl_adler_infiltration_flight_jacket_c" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\i_c_t9_usa_pl_adler_infiltration_flight_jacket_c.png"
+                "compressionMethod" "compressed"
+                "semantic" "diffuseMap"
+                "type" "image"
+            }
+    
+            "i_c_t9_usa_pl_adler_infiltration_flight_jacket_m" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\i_c_t9_usa_pl_adler_infiltration_flight_jacket_m.png"
+                "compressionMethod" "compressed"
+                "semantic" "multipleMask"
+                "type" "image"
+            }
+    
+            "i_c_t9_usa_pl_adler_infiltration_flight_jacket_g" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\i_c_t9_usa_pl_adler_infiltration_flight_jacket_g.png"
+                "compressionMethod" "compressed"
+                "semantic" "glossMap"
+                "type" "image"
+            }
+    
+            "i_c_t9_usa_pl_adler_infiltration_flight_jacket_s" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\i_c_t9_usa_pl_adler_infiltration_flight_jacket_s.png"
+                "compressionMethod" "compressed"
+                "semantic" "specularMap"
+                "type" "image"
+            }
+    
+            "images_copy" ( "material.gdf" )
+            {
+                "materialCategory" "Geometry"
+                "materialType" "lit"
+                				"occlusionMap" "i_c_t9_usa_pl_adler_infiltration_flight_jacket_o" 
+				"normalMap" "i_c_t9_usa_pl_adler_infiltration_flight_jacket_n" 
+				"normalMap" "i_c_t8_detail_leather_bull_n" 
+				"normalMap" "i_c_gen_detail_soft_fabric_n" 
+				"normalMap" "i_c_gen_detail_neoprene_n" 
+				"normalMap" "ximage_c3c2dcaa1919434" 
+				"diffuseMap" "i_c_t9_usa_pl_adler_infiltration_flight_jacket_c" 
+				"multipleMask" "i_c_t9_usa_pl_adler_infiltration_flight_jacket_m" 
+				"glossMap" "i_c_t9_usa_pl_adler_infiltration_flight_jacket_g" 
+				"specularMap" "i_c_t9_usa_pl_adler_infiltration_flight_jacket_s" 
+
+            }
+    
+            "i_c_t9_usa_pl_adler_infiltration_flight_jacket_o" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\i_c_t9_usa_pl_adler_infiltration_flight_jacket_o.png"
+                "compressionMethod" "compressed"
+                "semantic" "occlusionMap"
+                "type" "image"
+            }
+    
+            "i_c_t9_usa_pl_adler_infiltration_flight_jacket_n" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\i_c_t9_usa_pl_adler_infiltration_flight_jacket_n.png"
+                "compressionMethod" "compressed"
+                "semantic" "normalMap"
+                "type" "image"
+            }
+    
+            "i_c_t8_detail_leather_bull_n" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\i_c_t8_detail_leather_bull_n.png"
+                "compressionMethod" "compressed"
+                "semantic" "normalMap"
+                "type" "image"
+            }
+    
+            "i_c_gen_detail_soft_fabric_n" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\i_c_gen_detail_soft_fabric_n.png"
+                "compressionMethod" "compressed"
+                "semantic" "normalMap"
+                "type" "image"
+            }
+    
+            "i_c_gen_detail_neoprene_n" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\i_c_gen_detail_neoprene_n.png"
+                "compressionMethod" "compressed"
+                "semantic" "normalMap"
+                "type" "image"
+            }
+    
+            "ximage_c3c2dcaa1919434" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\ximage_c3c2dcaa1919434.png"
+                "compressionMethod" "compressed"
+                "semantic" "normalMap"
+                "type" "image"
+            }
+    
+            "i_c_t9_usa_pl_adler_infiltration_flight_jacket_c" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\i_c_t9_usa_pl_adler_infiltration_flight_jacket_c.png"
+                "compressionMethod" "compressed"
+                "semantic" "diffuseMap"
+                "type" "image"
+            }
+    
+            "i_c_t9_usa_pl_adler_infiltration_flight_jacket_m" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\i_c_t9_usa_pl_adler_infiltration_flight_jacket_m.png"
+                "compressionMethod" "compressed"
+                "semantic" "multipleMask"
+                "type" "image"
+            }
+    
+            "i_c_t9_usa_pl_adler_infiltration_flight_jacket_g" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\i_c_t9_usa_pl_adler_infiltration_flight_jacket_g.png"
+                "compressionMethod" "compressed"
+                "semantic" "glossMap"
+                "type" "image"
+            }
+    
+            "i_c_t9_usa_pl_adler_infiltration_flight_jacket_s" ( "image.gdf" )
+            {
+                "baseImage" "REPLACE_THIS_TEXT\\i_c_t9_usa_pl_adler_infiltration_flight_jacket_s.png"
+                "compressionMethod" "compressed"
+                "semantic" "specularMap"
+                "type" "image"
+            }
+    
+            "images" ( "material.gdf" )
+            {
+                "materialCategory" "Geometry"
+                "materialType" "lit"
+                				"occlusionMap" "i_c_t9_usa_pl_adler_infiltration_flight_jacket_o" 
+				"normalMap" "i_c_t9_usa_pl_adler_infiltration_flight_jacket_n" 
+				"normalMap" "i_c_t8_detail_leather_bull_n" 
+				"normalMap" "i_c_gen_detail_soft_fabric_n" 
+				"normalMap" "i_c_gen_detail_neoprene_n" 
+				"normalMap" "ximage_c3c2dcaa1919434" 
+				"diffuseMap" "i_c_t9_usa_pl_adler_infiltration_flight_jacket_c" 
+				"multipleMask" "i_c_t9_usa_pl_adler_infiltration_flight_jacket_m" 
+				"glossMap" "i_c_t9_usa_pl_adler_infiltration_flight_jacket_g" 
+				"specularMap" "i_c_t9_usa_pl_adler_infiltration_flight_jacket_s" 
+
+            }
+    
+}
