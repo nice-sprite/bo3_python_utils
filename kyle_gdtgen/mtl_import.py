@@ -103,7 +103,7 @@ def end_gdt(gdt_file):
     gdt_file.write("\n}")
     gdt_file.close()
 
-
+#oop
 def main():
     # sets up the gdt output file
     gdt_out = start_gdt()
