@@ -14,4 +14,7 @@ If you want images with no materials, use img_import.py
 
 For materials too, use mtl_import.py
 
-Credits: Kingslayer Kyle (Idea, Testing)
+Credits:
+
+- Me, writing the scripts :smile:
+- Kingslayer Kyle (Idea, Testing)
