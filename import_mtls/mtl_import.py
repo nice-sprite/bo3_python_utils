@@ -1,31 +1,39 @@
 # author: Mystic#9127
 import os
 import glob
+
 import uuid
 
 
+semantic_map = {
+    "aoMap": "occlusionMap",
+    "normalMap": "normalMap",
+    "detailNormal2": "normalMap",
+    "detailNormal3": "normalMap",
+    "detailNormal1": "normalMap",
+    "detailNormal4": "normalMap",
+    "colorMap": "diffuseMap",
+    "detailNormalMask": "multipleMask",
+    "glossMap": "glossMap",
+    "specColorMap": "specularMap",
+    "velveteenMask": "revealMap",
+    "tintMask": "revealMap",
+    "thicknessMap": "thicknessMap",
+    "revealMap": "revealMap",
+    "camoMaskMap": "revealMap",
+    "emissiveMap": "diffuseMap",
+    "glossBodyMap": "glossMap",
+    "normalBodyMap": "normalMap",
+    "flickerLookupMap": "revealMap",
+    "detailMap": "normalMap",
+}   
+
+export_dir = input("enter model_export path (press enter to skip): ")
+if (export_dir == ""):
+    export_dir = "REPLACE_THIS_TEXT"
+
 def map_semantic(sem): 
-    semantic_map = {
-        "aoMap": "occlusionMap",
-        "normalMap": "normalMap",
-        "detailNormal2": "normalMap",
-        "detailNormal3": "normalMap",
-        "detailNormal1": "normalMap",
-        "detailNormal4": "normalMap",
-        "colorMap": "diffuseMap",
-        "detailNormalMask": "multipleMask",
-        "glossMap": "glossMap",
-        "specColorMap": "specularMap",
-        "velveteenMask": "revealMap",
-        "tintMask": "revealMap",
-        "thicknessMap": "thicknessMap",
-        "revealMap": "revealMap",
-        "camoMaskMap": "revealMap",
-        "emissiveMap": "diffuseMap",
-        "glossBodyMap": "glossMap",
-        "normalBodyMap": "normalMap",
-        "flickerLookupMap": "revealMap",
-    }   
+
      
     if sem in semantic_map.keys():
         mapped_sem = semantic_map[sem]
@@ -46,17 +54,25 @@ def parse_mtls(mtl_images):
 
 
 def img_gdt_format(img):
+    
     template = """
             "{img_name}" ( "image.gdf" )
             {{
-                "baseImage" "REPLACE_THIS_TEXT\\\\{img_name}.png"
-                "compressionMethod" "compressed"
+                "baseImage" "{export_dir}\\\\{img_name}.png"
                 "semantic" "{semantic}"
                 "type" "image"
             }}
     """
-    return template.format(img_name = img['image'], semantic = img['semantic'])
+    return template.format(img_name = img['image'], semantic = img['semantic'], export_dir = export_dir)
     
+seen = []
+def has_img_been_added(img_name):
+    if img_name in seen:
+        return True
+    else:
+        seen.append(img_name)
+        return False
+            
 
 def import_images(gdt_file, images):
     """adds all the images contained in a .txt to the gdt
@@ -65,13 +81,14 @@ def import_images(gdt_file, images):
         gdt_file (file handle): handle to the gdt file we are writing to
         images (list): list of {semantic, image} representing each line of the .txt file. 
     """
-    # print(images)
+    
     for img in images:
         mapped_sem = map_semantic(img['semantic']) 
         if mapped_sem:
-            img['semantic'] = mapped_sem
-            img_entry = img_gdt_format(img)
-            gdt_file.write(img_entry)
+            if not has_img_been_added(img['image']): # should remove duplicate image entries, but still add them to mtls
+                img['semantic'] = mapped_sem
+                img_entry = img_gdt_format(img)
+                gdt_file.write(img_entry)
         else: 
             print(f'\tskipping {img} because of unknown semantic.')
 
@@ -89,7 +106,8 @@ def mtl_entry(mtl_name, mtl_images):
 
     img_list = ""
     for img in mtl_images:
-        img_list += '\t\t\t\t"{semantic}" "{img}" \n'.format(semantic = img["semantic"], img = img["image"])
+        if img["semantic"] in semantic_map.keys():
+            img_list += '\t\t\t\t"{semantic}" "{img}" \n'.format(semantic = img["semantic"], img = img["image"])
     return template.format(mtl_name = mtl_name, img_list = img_list)
 
 
@@ -107,15 +125,17 @@ def end_gdt(gdt_file):
 def main():
     # sets up the gdt output file
     gdt_out = start_gdt()
-    input_directory = input("enter .txt folder path: ") # get the export directory 
+    input_directory = input("enter .txt folder path: ") # get the directory 
+    
+    
     for file in glob.glob(f'{input_directory}/*.txt'):
         print(f"processing {os.path.split(file)[1]}...")
-        mtl_name = os.path.split(file)[1].replace(' ', '_').replace(".txt", "")
+        mtl_name = os.path.split(file)[1].replace(' ', '_').replace("_images.txt", "")
         # print(mtl_name)
         mtl_list = parse_mtls(open(file).readlines()[1:])
-    
+        mtl_list_2 =  parse_mtls(open(file).readlines()[1:])
         import_images(gdt_out, mtl_list)
-        gdt_out.write(mtl_entry(mtl_name, mtl_list))
+        gdt_out.write(mtl_entry(mtl_name, mtl_list_2))
         #import images
         #import mtl
     end_gdt(gdt_out)
