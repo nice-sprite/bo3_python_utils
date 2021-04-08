@@ -28,6 +28,33 @@ semantic_map = {
     "detailMap": "normalMap",
 }   
 
+mtl_sems = {
+	'mixMap': 'alphaRevealMap',
+	'aoMap': 'occMap',
+	'specularMapDetail2': 'colorMap03',
+	'unk_semantic_0x5031EE8E': 'colorMap02',
+	'detailMap1': 'detailMap',
+	'detailMap2': 'colorMap00',
+	'normalMap': 'normalMap',
+	'colorMapDetail2': 'colorMap01',
+	'colorMap': 'colorMap',
+	'glossMap': 'cosinePowerMap',
+	'specColorMap': 'specColorMap',
+	'unk_semantic_0x13817CC0': 'camoMaskMap',
+	'detailNormal2': 'colorMap01',
+	'detailNormal3': 'colorMap02',
+	'detailNormal1': 'detailMap',
+	'detailNormal4': 'colorMap03',
+	'detailNormalMask': 'colorMap04',
+	'emissiveMap1': 'colorMap00',
+	'emissiveMap2': 'colorMap01',
+	'emissiveMap3': 'colorMap02',
+	'tintMask': 'colorMap00',
+	'alphaMap': 'alphaRevealMap',
+	'emissiveMap': 'colorMap00',
+	'alphaMaskMap': 'colorMap02',
+}
+
 export_dir = input(""" Enter path to the "_images" folder for your model, 
 
 Example: model_export\\kingslayer_kyle\\my_model\\_images
@@ -110,7 +137,9 @@ def mtl_entry(mtl_name, mtl_images):
 
     img_list = ""
     for img in mtl_images:
-        if img["semantic"] in semantic_map.keys():
+        #if img["semantic"] in semantic_map.keys():
+            if img['semantic'] in mtl_sems.keys(): 
+                img['semantic'] = mtl_sems[img['semantic']]
             img_list += '\t\t\t\t"{semantic}" "{img}" \n'.format(semantic = img["semantic"], img = img["image"])
     return template.format(mtl_name = mtl_name, img_list = img_list)
 
